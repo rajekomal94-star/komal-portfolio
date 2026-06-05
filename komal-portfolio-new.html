@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO Meta Tags -->
+<title>Komal Kumbhar | WordPress Developer & Web Engineer | Pune</title>
+<meta name="description" content="Komal Kumbhar is a detail-oriented WordPress Developer based in Pune, Maharashtra. Expert in Elementor, WPBakery, ACF, WooCommerce, Webflow, and responsive web design.">
+<meta name="keywords" content="WordPress Developer Pune, Elementor Developer, WPBakery, ACF, WooCommerce, Web Developer Maharashtra, Komal Kumbhar, Webflow Developer, Responsive Web Design">
+<meta name="author" content="Komal Kumbhar">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://komalkumbhar.dev/">
+
+<!-- Open Graph / Social SEO -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Komal Kumbhar | Web Developer">
+<meta property="og:description" content="WordPress Developer specializing in Elementor, WPBakery, ACF, WooCommerce, and Webflow. Based in Pune, Maharashtra.">
+<meta property="og:url" content="https://komalkumbhar.dev/">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Komal Kumbhar | Web Developer">
+<meta name="twitter:description" content="WordPress Developer specializing in Elementor, WPBakery, ACF, WooCommerce, and Webflow.">
+
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Komal Kumbhar",
+  "jobTitle": "Web Developer",
+  "email": "kkomalraje@gmail.com",
+  "telephone": "+916353479244",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pune",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "url": "https://komalkumbhar.dev",
+  "knowsAbout": ["WordPress", "Elementor", "WPBakery", "ACF", "WooCommerce", "Webflow", "HTML", "CSS", "JavaScript", "jQuery", "PHP"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --surface: #111118;
+    --surface2: #1a1a24;
+    --accent: #6c63ff;
+    --accent2: #ff6584;
+    --accent3: #43e8b0;
+    --text: #f0f0f5;
+    --muted: #8888a0;
+    --border: rgba(255,255,255,0.08);
+    --card-bg: rgba(255,255,255,0.04);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; width: 100%; z-index: 100;
+    padding: 1rem 2rem;
+    display: flex; align-items: center; justify-content: space-between;
+    background: rgba(10,10,15,0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; font-size: 1rem;
+    color: var(--text);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--accent); }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a {
+    color: var(--muted); text-decoration: none;
+    font-size: 0.8rem; font-weight: 500;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--text); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 8rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(108,99,255,0.18) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 40% at 80% 80%, rgba(67,232,176,0.08) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-tag {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    border: 1px solid rgba(108,99,255,0.4);
+    border-radius: 50px;
+    font-size: 0.8rem; font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.2rem;
+  }
+  h1 .line2 { color: var(--accent); display: block; }
+  .hero p {
+    max-width: 540px;
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 auto 2rem;
+  }
+  .hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    padding: 0.6rem 1.6rem;
+    background: var(--accent);
+    color: #fff;
+    border: none; border-radius: 8px;
+    font-size: 0.83rem; font-weight: 500;
+    text-decoration: none; cursor: pointer;
+    transition: opacity 0.2s, transform 0.2s;
+    display: inline-block;
+  }
+  .btn-primary:hover { opacity: 0.88; transform: translateY(-2px); }
+  .btn-outline {
+    padding: 0.6rem 1.6rem;
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.83rem; font-weight: 500;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+    display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--accent); background: rgba(108,99,255,0.08); }
+
+  .hero-scroll {
+    margin-top: 4rem;
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    color: var(--muted); font-size: 0.8rem;
+    animation: float 2s ease-in-out infinite;
+  }
+  .scroll-dot {
+    width: 20px; height: 30px;
+    border: 1.5px solid var(--muted);
+    border-radius: 10px;
+    display: flex; justify-content: center; padding-top: 5px;
+  }
+  .scroll-dot::before {
+    content: '';
+    width: 4px; height: 8px;
+    border-radius: 2px;
+    background: var(--muted);
+    animation: scroll-anim 1.5s ease-in-out infinite;
+  }
+  @keyframes scroll-anim { 0%,100%{transform:translateY(0);opacity:1} 50%{transform:translateY(6px);opacity:0.3} }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+
+  /* SECTIONS */
+  section { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.78rem; font-weight: 500; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--accent);
+    margin-bottom: 0.75rem;
+    display: flex; align-items: center; gap: 0.5rem;
+  }
+  .section-label::after {
+    content: ''; flex: 1; max-width: 60px; height: 1px;
+    background: var(--accent); opacity: 0.4;
+  }
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 600; margin-bottom: 0.85rem;
+    line-height: 1.2;
+  }
+  h3 { font-family: 'Poppins', sans-serif; font-weight: 600; }
+
+  /* ABOUT */
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 3rem; align-items: center;
+    margin-top: 3rem;
+  }
+  .about-text p { color: var(--muted); font-size: 0.88rem; margin-bottom: 1rem; }
+  .about-stats { display: flex; gap: 2rem; margin-top: 2rem; flex-wrap: wrap; }
+  .stat { text-align: left; }
+  .stat-num {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem; font-weight: 700;
+    color: var(--accent);
+  }
+  .stat-label { font-size: 0.75rem; color: var(--muted); }
+  .about-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+  .about-avatar {
+    width: 60px; height: 60px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent3));
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem; font-weight: 700; color: #fff;
+    margin-bottom: 1.25rem;
+  }
+  .about-card h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+  .about-card .role { color: var(--accent); font-size: 0.78rem; margin-bottom: 1rem; }
+  .info-row { display: flex; gap: 0.5rem; align-items: center; color: var(--muted); font-size: 0.8rem; margin-bottom: 0.5rem; }
+  .info-icon { width: 15px; color: var(--accent); flex-shrink: 0; }
+
+  /* SKILLS */
+  .skills-section { background: var(--surface); border-radius: 0; }
+  .skills-section > div { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
+  .skills-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem; margin-top: 3rem;
+  }
+  .skill-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.5rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .skill-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .skill-card-icon {
+    width: 42px; height: 42px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; margin-bottom: 1rem;
+  }
+  .skill-card h3 { font-size: 0.88rem; margin-bottom: 0.65rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag {
+    padding: 0.2rem 0.55rem;
+    background: rgba(108,99,255,0.1);
+    border: 1px solid rgba(108,99,255,0.25);
+    border-radius: 20px;
+    font-size: 0.7rem; color: #b0b0d0;
+  }
+
+  /* SEO SECTION */
+  .seo-section { background: var(--bg); }
+  .seo-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    gap: 1.25rem; margin-top: 2.5rem;
+  }
+  .seo-card {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    transition: border-color 0.2s;
+  }
+  .seo-card:hover { border-color: var(--accent3); }
+  .seo-icon {
+    font-size: 1.5rem; margin-bottom: 0.75rem;
+    display: inline-block;
+  }
+  .seo-card h3 { font-size: 0.85rem; margin-bottom: 0.5rem; }
+  .seo-card p { font-size: 0.78rem; color: var(--muted); }
+
+  /* PROJECTS */
+  .projects-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem; margin-top: 3rem;
+  }
+  .project-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--card-bg);
+    transition: transform 0.25s, border-color 0.25s;
+  }
+  .project-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+  .project-preview {
+    height: 140px;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden;
+    font-family: 'Poppins', sans-serif; font-weight: 600;
+    font-size: 0.95rem; letter-spacing: 0.02em;
+  }
+  .preview-lv { background: linear-gradient(135deg, #1a1a2e, #16213e); color: #e94560; }
+  .preview-bm { background: linear-gradient(135deg, #0f3460, #1a1a2e); color: #2196f3; }
+  .preview-gg { background: linear-gradient(135deg, #1b1b1b, #2d2d2d); color: #d4a843; }
+  .preview-fn { background: linear-gradient(135deg, #0d1b2a, #1b2838); color: #4ecdc4; }
+  .project-body { padding: 1rem 1.25rem; }
+  .project-body h3 { font-size: 0.88rem; margin-bottom: 0.35rem; }
+  .project-body p { font-size: 0.78rem; color: var(--muted); margin-bottom: 0.85rem; }
+  .project-tags { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.85rem; }
+  .project-tag {
+    font-size: 0.68rem; padding: 0.18rem 0.5rem;
+    border-radius: 4px; background: rgba(255,255,255,0.05);
+    color: var(--muted); border: 1px solid var(--border);
+  }
+  .project-link {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-size: 0.76rem; color: var(--accent);
+    text-decoration: none; font-weight: 500;
+    transition: gap 0.2s;
+  }
+  .project-link:hover { gap: 0.65rem; }
+
+  /* EXPERIENCE */
+  .exp-timeline { margin-top: 3rem; position: relative; }
+  .exp-timeline::before {
+    content: '';
+    position: absolute; left: 17px; top: 0; bottom: 0;
+    width: 1px; background: var(--border);
+  }
+  .exp-item { display: flex; gap: 2rem; margin-bottom: 3rem; position: relative; }
+  .exp-dot {
+    width: 36px; height: 36px; border-radius: 50%;
+    background: var(--surface2);
+    border: 2px solid var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; margin-top: 0.25rem;
+    font-size: 0.72rem; font-weight: 700;
+    color: var(--accent);
+  }
+  .exp-content { flex: 1; }
+  .exp-meta { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; }
+  .exp-company { font-family: 'Poppins', sans-serif; font-size: 0.95rem; font-weight: 600; }
+  .exp-period {
+    font-size: 0.72rem; color: var(--muted);
+    background: var(--card-bg); border: 1px solid var(--border);
+    padding: 0.18rem 0.6rem; border-radius: 20px;
+  }
+  .exp-role { color: var(--accent); font-size: 0.78rem; margin: 0.3rem 0 0.65rem; }
+  .exp-list { list-style: none; }
+  .exp-list li {
+    font-size: 0.82rem; color: var(--muted);
+    padding: 0.28rem 0; display: flex; gap: 0.65rem; align-items: flex-start;
+  }
+  .exp-list li::before { content: '→'; color: var(--accent3); flex-shrink: 0; margin-top: 0.05rem; }
+
+  /* EDUCATION */
+  .edu-card {
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 1.75rem;
+    background: var(--card-bg);
+    display: flex; gap: 1.25rem; align-items: flex-start;
+    margin-top: 2rem;
+  }
+  .edu-icon {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), #9b93ff);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; flex-shrink: 0;
+  }
+  .edu-card h3 { font-size: 0.92rem; margin-bottom: 0.25rem; }
+  .edu-card .uni { color: var(--muted); font-size: 0.78rem; margin-bottom: 0.5rem; }
+  .edu-badge {
+    display: inline-block; padding: 0.18rem 0.6rem;
+    background: rgba(67,232,176,0.1); border: 1px solid rgba(67,232,176,0.3);
+    border-radius: 20px; font-size: 0.72rem; color: var(--accent3);
+  }
+
+  /* CONTACT */
+  .contact-section { background: var(--surface); border-radius: 0; }
+  .contact-section > div { max-width: 1100px; margin: 0 auto; padding: 5rem 2rem; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 3rem; }
+  .contact-card {
+    border: 1px solid var(--border); border-radius: 14px; padding: 1.25rem;
+    background: var(--card-bg); display: flex; gap: 0.85rem; align-items: center;
+    text-decoration: none; color: var(--text); transition: border-color 0.2s, transform 0.2s;
+  }
+  .contact-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .contact-icon {
+    width: 38px; height: 38px; border-radius: 9px;
+    display: flex; align-items: center; justify-content: center; font-size: 1.05rem;
+    flex-shrink: 0;
+  }
+  .contact-card h3 { font-size: 0.82rem; margin-bottom: 0.15rem; }
+  .contact-card p { font-size: 0.75rem; color: var(--muted); }
+  .contact-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .contact-cta h2 { margin-bottom: 0.85rem; }
+  .contact-cta p { color: var(--muted); margin-bottom: 1.75rem; font-size: 0.88rem; }
+
+  /* FOOTER */
+  footer {
+    text-align: center; padding: 1.75rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.75rem;
+  }
+
+  /* FADE IN */
+  .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: none; }
+
+  @media (max-width: 768px) {
+    .about-grid, .contact-grid { grid-template-columns: 1fr; }
+    .contact-cards { grid-template-columns: 1fr; }
+    .nav-links { display: none; }
+    .exp-timeline::before { left: 14px; }
+    .exp-dot { width: 30px; height: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="nav-logo">KK<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:kkomalraje@gmail.com" class="btn-primary" style="padding:0.5rem 1.2rem;font-size:0.85rem;">Hire Me</a>
+</nav>
+
+<!-- HERO -->
+<header id="home" class="hero">
+  <div class="hero-tag">Available for new projects</div>
+  <h1>
+    Komal Kumbhar
+    <span class="line2">Web Developer</span>
+  </h1>
+  <p>Detail-oriented developer specializing in Elementor, WPBakery, ACF, WooCommerce & Webflow — building responsive, performant websites that rank and convert.</p>
+  <div class="hero-btns">
+    <a href="#projects" class="btn-primary">View My Work</a>
+    <a href="mailto:kkomalraje@gmail.com" class="btn-outline">Get in Touch</a>
+  </div>
+  <div class="hero-scroll" role="presentation">
+    <div class="scroll-dot"></div>
+    <span>scroll</span>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="fade-in">
+    <div class="section-label">Who I am</div>
+    <h2>Building the web,<br>one pixel at a time</h2>
+  </div>
+  <div class="about-grid fade-in">
+    <div class="about-text">
+      <p>I'm a WordPress & Web Developer based in Pune, Maharashtra with a passion for creating clean, functional, and responsive websites. With hands-on experience at DIGINNOVATORS and AOM WEB DESIGNER, I've delivered projects across finance, food, and enterprise verticals.</p>
+      <p>I specialize in converting Figma designs to pixel-perfect WordPress sites, customizing themes with Elementor & WPBakery, managing dynamic content with ACF, and optimizing sites for performance and basic SEO using Rank Math.</p>
+      <div class="about-stats">
+        <div class="stat">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Live Projects</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8.48</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-card">
+      <div class="about-avatar">KK</div>
+      <h3>Komal Kumbhar</h3>
+      <div class="role">WordPress Developer &amp; Web Engineer</div>
+      <div class="info-row">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        kkomalraje@gmail.com
+      </div>
+      <div class="info-row">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        +91 6353479244
+      </div>
+      <div class="info-row">
+        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        Pune, Maharashtra, India
+      </div>
+      <div class="info-row" style="margin-top:0.5rem; flex-wrap: wrap; gap: 0.4rem;">
+        <span style="font-size:0.78rem;color:var(--muted);">Languages:</span>
+        <span class="tag">English</span><span class="tag">Hindi</span><span class="tag">Marathi</span><span class="tag">Gujarati</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<div class="skills-section" id="skills">
+<div>
+  <div class="section-label fade-in">What I do</div>
+  <h2 class="fade-in">Skills &amp; Expertise</h2>
+  <div class="skills-grid fade-in">
+    <div class="skill-card">
+      <div class="skill-card-icon" style="background:rgba(108,99,255,0.15);">🔧</div>
+      <h3>WordPress Development</h3>
+      <div class="tags">
+        <span class="tag">Elementor Pro</span><span class="tag">WPBakery</span><span class="tag">ACF</span>
+        <span class="tag">WooCommerce</span><span class="tag">Theme Dev</span><span class="tag">Rank Math SEO</span>
+        <span class="tag">Plugin Customization</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon" style="background:rgba(67,232,176,0.12);">💻</div>
+      <h3>Frontend Development</h3>
+      <div class="tags">
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+        <span class="tag">jQuery</span><span class="tag">Bootstrap</span><span class="tag">Responsive Design</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon" style="background:rgba(255,101,132,0.12);">🎨</div>
+      <h3>Design &amp; CMS</h3>
+      <div class="tags">
+        <span class="tag">Figma to WP</span><span class="tag">HTML to WP</span><span class="tag">Webflow</span>
+        <span class="tag">CMS Collections</span><span class="tag">Basic PHP</span>
+      </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-card-icon" style="background:rgba(250,200,70,0.12);">⚡</div>
+      <h3>Optimization &amp; SEO</h3>
+      <div class="tags">
+        <span class="tag">Web Performance</span><span class="tag">On-Page SEO</span><span class="tag">Rank Math</span>
+        <span class="tag">Cross-browser</span><span class="tag">Mobile-first</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- SEO KNOWLEDGE -->
+<section id="seo">
+  <div class="fade-in">
+    <div class="section-label">SEO Know-how</div>
+    <h2>Basic SEO Best Practices<br><span style="font-size:1.2rem;color:var(--muted);font-weight:400;">I apply on every project</span></h2>
+    <p style="color:var(--muted);margin-top:0.75rem;max-width:600px;">Every website I build follows fundamental SEO principles to improve discoverability, speed, and search ranking.</p>
+  </div>
+  <div class="seo-grid fade-in">
+    <div class="seo-card">
+      <div class="seo-icon">🔍</div>
+      <h3>On-Page SEO</h3>
+      <p>Proper H1–H6 hierarchy, meta titles &amp; descriptions, keyword placement, and Rank Math SEO plugin configuration.</p>
+    </div>
+    <div class="seo-card">
+      <div class="seo-icon">⚡</div>
+      <h3>Page Speed</h3>
+      <p>Image optimization, lazy loading, minified CSS/JS, caching plugins, and Core Web Vitals improvements.</p>
+    </div>
+    <div class="seo-card">
+      <div class="seo-icon">📱</div>
+      <h3>Mobile-First Design</h3>
+      <p>Fully responsive layouts tested across devices. Google ranks mobile-friendly sites higher — every project I build passes.</p>
+    </div>
+    <div class="seo-card">
+      <div class="seo-icon">🔗</div>
+      <h3>Clean URL Structure</h3>
+      <p>SEO-friendly permalinks, proper internal linking, breadcrumb navigation, and schema markup readiness.</p>
+    </div>
+    <div class="seo-card">
+      <div class="seo-icon">🖼️</div>
+      <h3>Image SEO</h3>
+      <p>Descriptive alt text, proper file naming, WebP format when possible, and correct image dimensions for LCP.</p>
+    </div>
+    <div class="seo-card">
+      <div class="seo-icon">📊</div>
+      <h3>Schema &amp; OG Tags</h3>
+      <p>Structured data (JSON-LD), Open Graph meta tags, and Twitter Card tags for rich previews on search and social.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="fade-in">
+    <div class="section-label">My work</div>
+    <h2>Live Projects</h2>
+    <p style="color:var(--muted);margin-top:0.5rem;">Real websites I've built and customized for clients across different industries.</p>
+  </div>
+  <div class="projects-grid fade-in">
+
+    <article class="project-card">
+      <div class="project-preview preview-lv"><img src=""> LoanVittus</div>
+      <div class="project-body">
+        <h3>LoanVittus — Finance Platform</h3>
+        <p>Built multi-step loan calculator UI, custom forms, and ACF dynamic content blocks. Optimized for performance and mobile responsiveness.</p>
+        <div class="project-tags">
+          <span class="project-tag">WordPress</span><span class="project-tag">Elementor</span>
+          <span class="project-tag">ACF</span><span class="project-tag">Calculator UI</span><span class="project-tag">Finance</span>
+        </div>
+        <a href="https://loanvittus.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+          Visit Site <span>→</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-preview preview-bm">📋 BetterManager</div>
+      <div class="project-body">
+        <h3>BetterManager — Business Tool</h3>
+        <p>Custom WordPress build with business-focused UI, responsive design, and smooth cross-browser compatibility throughout.</p>
+        <div class="project-tags">
+          <span class="project-tag">WordPress</span><span class="project-tag">Custom CSS/JS</span>
+          <span class="project-tag">Responsive</span><span class="project-tag">Business</span>
+        </div>
+        <a href="https://bettermanager.in/" target="_blank" rel="noopener noreferrer" class="project-link">
+          Visit Site <span>→</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-preview preview-gg">🍽️ The Great Greek Dallas</div>
+      <div class="project-body">
+        <h3>Great Greek Dallas — Restaurant</h3>
+        <p>WordPress customization with Elementor, restaurant-focused UX, menu sections, and improved mobile experience for The Great Greek franchise.</p>
+        <div class="project-tags">
+          <span class="project-tag">WordPress</span><span class="project-tag">Elementor</span>
+          <span class="project-tag">Restaurant</span><span class="project-tag">UX</span>
+        </div>
+        <a href="https://www.greatgreekdallas.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+          Visit Site <span>→</span>
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-preview preview-fn">💳 Finnable Credit</div>
+      <div class="project-body">
+        <h3>Finnable Credit — Fintech</h3>
+        <p>Fintech-focused web presence with custom WordPress build, dynamic content sections, and fast-loading pages optimized for lead conversion.</p>
+        <div class="project-tags">
+          <span class="project-tag">WordPress</span><span class="project-tag">Fintech</span>
+          <span class="project-tag">Performance</span><span class="project-tag">Conversion</span>
+        </div>
+        <a href="https://www.finnable.credit/" target="_blank" rel="noopener noreferrer" class="project-link">
+          Visit Site <span>→</span>
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="fade-in">
+    <div class="section-label">My journey</div>
+    <h2>Work Experience</h2>
+  </div>
+  <div class="exp-timeline fade-in">
+
+    <div class="exp-item">
+      <div class="exp-dot">01</div>
+      <div class="exp-content">
+        <div class="exp-meta">
+          <span class="exp-company">DIGINNOVATORS, Pune</span>
+          <span class="exp-period">Apr 2025 – May 2026</span>
+        </div>
+        <div class="exp-role">Junior Web Engineer</div>
+        <ul class="exp-list">
+          <li>WordPress customization with Elementor, plugins &amp; custom CSS/JS for LoanVittus, The Great Greek, and more</li>
+          <li>Built multi-step forms and calculator-based UI for finance and business websites</li>
+          <li>ACF dynamic content, responsive design, and frontend customization</li>
+          <li>Developed &amp; managed Webflow pages with custom JS functionality and CMS-based content updates</li>
+          <li>Improved website UI, responsiveness, and cross-browser compatibility for client projects</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-dot">02</div>
+      <div class="exp-content">
+        <div class="exp-meta">
+          <span class="exp-company">AOM WEB DESIGNER</span>
+          <span class="exp-period">Jan 2024 – Mar 2025</span>
+        </div>
+        <div class="exp-role">Web Designer</div>
+        <ul class="exp-list">
+          <li>Built and launched responsive websites using HTML, CSS, jQuery, and Bootstrap</li>
+          <li>Implemented dynamic features and custom layouts with Elementor and WPBakery</li>
+          <li>Customized WordPress themes and templates with seamless ACF integration</li>
+          <li>Resolved cross-device responsiveness issues and improved mobile-first UIs</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="padding-top:0;">
+  <div class="fade-in">
+    <div class="section-label">Academic background</div>
+    <h2>Education</h2>
+    <div class="edu-card">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <h3>Bachelor of Computer Engineering</h3>
+        <div class="uni">GTU University &nbsp;·&nbsp; 2019 – 2023</div>
+        <span class="edu-badge">CGPA: 8.48</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section" id="contact">
+<div>
+  <div class="section-label fade-in">Let's connect</div>
+  <div class="contact-grid fade-in">
+    <div class="contact-cta">
+      <h2>Ready to build something great?</h2>
+      <p>Looking for a WordPress developer who understands both design and functionality? Let's talk about your next project.</p>
+      <a href="mailto:kkomalraje@gmail.com" class="btn-primary">Send me an email →</a>
+    </div>
+    <div class="contact-cards">
+      <a href="mailto:kkomalraje@gmail.com" class="contact-card">
+        <div class="contact-icon" style="background:rgba(108,99,255,0.15);">📧</div>
+        <div>
+          <h3>Email</h3>
+          <p>kkomalraje@gmail.com</p>
+        </div>
+      </a>
+      <a href="tel:+916353479244" class="contact-card">
+        <div class="contact-icon" style="background:rgba(67,232,176,0.12);">📞</div>
+        <div>
+          <h3>Phone</h3>
+          <p>+91 6353479244</p>
+        </div>
+      </a>
+      <div class="contact-card" style="cursor:default;">
+        <div class="contact-icon" style="background:rgba(255,101,132,0.12);">📍</div>
+        <div>
+          <h3>Location</h3>
+          <p>Pune, Maharashtra</p>
+        </div>
+      </div>
+      <div class="contact-card" style="cursor:default;">
+        <div class="contact-icon" style="background:rgba(250,200,70,0.12);">🌐</div>
+        <div>
+          <h3>Availability</h3>
+          <p>Open to projects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer>
+  <p>© 2026 Komal Kumbhar · WordPress Developer · Pune, Maharashtra</p>
+  <p style="margin-top:0.35rem;font-size:0.75rem;">Built with HTML, CSS &amp; ❤️ · Optimized for SEO</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
